@@ -11,7 +11,7 @@ class Thermal < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jadmadi/thermal/releases/download/v0.13.0/thermal_0.13.0_darwin_amd64.tar.gz"
-      sha256 "20315953392e747cf328cf175313befbb04ad257fd15a6f1cb58e81ef949a9e0"
+      sha256 "49cc701c85c8af139e7f440a8817b4a2c8466af2d467e3d10868d9a3f335459f"
 
       def install
         bin.install "thermal"
@@ -19,7 +19,7 @@ class Thermal < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jadmadi/thermal/releases/download/v0.13.0/thermal_0.13.0_darwin_arm64.tar.gz"
-      sha256 "cd14292d709eb5ed20afc23d141671657643deec224a519f21ccb7060a948e1a"
+      sha256 "a77cd0eb9fd55aa3892ed6a7f1b0feb546360d772a5779c5502239d706323f8c"
 
       def install
         bin.install "thermal"
@@ -30,7 +30,7 @@ class Thermal < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/jadmadi/thermal/releases/download/v0.13.0/thermal_0.13.0_linux_amd64.tar.gz"
-      sha256 "4272f089142bc1a7743160c0c146416e272658f83fbe36571532b43304291fce"
+      sha256 "4554e6a57478506c6b6530e416df9b3ed9a4c02fa81895d5bfa8106f6109d44b"
 
       def install
         bin.install "thermal"
@@ -38,7 +38,7 @@ class Thermal < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jadmadi/thermal/releases/download/v0.13.0/thermal_0.13.0_linux_arm64.tar.gz"
-      sha256 "ae1e747afde8c9918811cecf1285c8ff9e93f05ba39cfbe932344a179093ad1d"
+      sha256 "6ffa002e6a1bd768a4bd1ec4eb2fefe69ebc7deb14fa377d7af14edc8a886bce"
 
       def install
         bin.install "thermal"
