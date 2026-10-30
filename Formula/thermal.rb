@@ -5,21 +5,21 @@
 class Thermal < Formula
   desc "Terminal contribution heatmap and leaderboard for AI coding assistants"
   homepage "https://jadmadi.net/project/thermal/"
-  version "0.20.0"
+  version "0.22.0"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jadmadi/thermal/releases/download/v0.20.0/thermal_0.20.0_darwin_amd64.tar.gz"
-      sha256 "23937f577c405a2123c43ea762df01deca42ca297ccfc93be95fc27c5d30db37"
+      url "https://github.com/jadmadi/thermal/releases/download/v0.22.0/thermal_0.22.0_darwin_amd64.tar.gz"
+      sha256 "c5c98f7ab464fb61f1db5d3229fd69c06bdef754d9d3c27cfcedef74285cfea5"
 
       def install
         bin.install "thermal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jadmadi/thermal/releases/download/v0.20.0/thermal_0.20.0_darwin_arm64.tar.gz"
-      sha256 "1baf6d4a0a817ec4ad9846ca29e1d4771ce87d95ba1be75dce9b2fc638444325"
+      url "https://github.com/jadmadi/thermal/releases/download/v0.22.0/thermal_0.22.0_darwin_arm64.tar.gz"
+      sha256 "d0278ce9f65f5d1130aa5422e474fb1a91487da29975afa8adcac9023482a783"
 
       def install
         bin.install "thermal"
@@ -29,16 +29,16 @@ class Thermal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jadmadi/thermal/releases/download/v0.20.0/thermal_0.20.0_linux_amd64.tar.gz"
-      sha256 "238a71f45be93d583a803a2fdaa630a0813178a2c884d96dbe1b90df83de9a6c"
+      url "https://github.com/jadmadi/thermal/releases/download/v0.22.0/thermal_0.22.0_linux_amd64.tar.gz"
+      sha256 "8eba4a3c61411bff16cd80a3de7174c4ed1aeaf30bd3ca0ef8802ad597715764"
 
       def install
         bin.install "thermal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jadmadi/thermal/releases/download/v0.20.0/thermal_0.20.0_linux_arm64.tar.gz"
-      sha256 "36d0dc1d1118893f28a206f4cec5027133feaaf45b269139cd62cfb72db7cb81"
+      url "https://github.com/jadmadi/thermal/releases/download/v0.22.0/thermal_0.22.0_linux_arm64.tar.gz"
+      sha256 "d12ff1839110f0aed0cbca5b6205e8a8f344e87d84c2af961461906ec349aabc"
 
       def install
         bin.install "thermal"
